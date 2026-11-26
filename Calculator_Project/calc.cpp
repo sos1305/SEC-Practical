@@ -18,8 +18,12 @@ int multiply(int m, int n){
     return m*n;
 }
 
+add square(int m){
+    return m*m;
+}
+
 int main(){
-    cout<<"This is a calculator, press 1 for addition, press 2 for subtraction, press 3 for division, press 4 for multiplication: ";
+    cout<<"This is a calculator, press 1 for addition, press 2 for subtraction, press 3 for division, press 4 for multiplication, press 5 for square: ";
     int x;
     cin>>x;
     int a;
@@ -43,6 +47,11 @@ int main(){
 
         case 4:
         return multiply(a,b);
+        break;
+
+        case 5:
+        return square(a);
+        break;
     }
     return 0;
 }
